@@ -144,19 +144,24 @@ name: Local Assistant
 version: 1.0.0
 schema: v1
 models:
-  - name: {ns_private_lmaas_model_0_name}
-    provider: openai
-    model: {ns_private_lmaas_model_0_name}
-    apiBase: {ns_private_lmaas_model_0_url}/v1
-    apiKey: {ns_private_lmaas_model_0_token}
+- name: {ns_private_lmaas_model_0_name}
+  provider: openai
+  model: {ns_private_lmaas_model_0_name}
+  apiBase: {ns_private_lmaas_model_0_url}/v1
+  apiKey: {ns_private_lmaas_model_0_token}
+- name: {ns_private_lmaas_model_1_name}
+  provider: openai
+  model: {ns_private_lmaas_model_1_name}
+  apiBase: {ns_private_lmaas_model_1_url}/v1
+  apiKey: {ns_private_lmaas_model_1_token}
 context:
-  - provider: code
-  - provider: docs
-  - provider: diff
-  - provider: terminal
-  - provider: problems
-  - provider: folder
-  - provider: codebase
+- provider: code
+- provider: docs
+- provider: diff
+- provider: terminal
+- provider: problems
+- provider: folder
+- provider: codebase
 ----
 
 // IMPORTANT: Replace the `apiBase` URL with your actual MaaS endpoint URL and `YOUR_API_KEY` with the API key from your MaaS application.
