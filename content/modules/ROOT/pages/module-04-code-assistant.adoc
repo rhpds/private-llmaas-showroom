@@ -35,9 +35,15 @@ You could also easily leverage our exposed model API endpoint in your local envi
 
 Your platform engineer has provided you a direct URL to the Dev Spaces console to begin your work.
 
-*  Navigate to your DevSpace[{devworkspace_route}].
+Navigate to your DevSpace[{devworkspace_route}].
 
-We have a Red Hat DevSpaces workspace ready for your use, with the required dependencies. As a developer, you can also create your own workspace without needing to install or configure anything locally. There may however, be some restrictions put in place by your admin around resource limitations or only using approved devfiles (yaml files used to instantiate new workspaces). 
+We have a Red Hat DevSpaces workspace ready for your use, with the required dependencies. As a developer, you can also create your own workspace without needing to install or configure anything locally. There may however, be some restrictions put in place by your admin around resource limitations or only using approved devfiles (yaml files used to instantiate new workspaces).
+
+Log into your DevSpace using your Sandbox credentials:
+* *Username*: `{sandbox_openshift_user}`
+* *Password*: `{sandbox_openshift_password}`
+
+Click on *Allow selected permissions* if prompted to.
 
 // * Open the `Workspaces` tab:
 
@@ -47,9 +53,11 @@ We have a Red Hat DevSpaces workspace ready for your use, with the required depe
 
 // image::code/workspace_preset.png[width="50%"]
 
-After a moment, you'll see the VSCode interface running in your browser. If prompted, click "Trust" when asked about the authors. We're friendly, I promise! 
+After a moment, you'll see the VSCode interface running in your browser. If prompted, click "Trust" when asked about the authors. We're friendly, I promise!
 
 image::code/vscode_trust.png[width="50%"]
+
+Then on the welcome wizard just click *Mark Done* to ignore any initial setup.
 
 Inside your workspace, you'll find a cloned GitHub repository. This is where you will build and refine. The only thing we need to configure is our code extension.
 
@@ -57,7 +65,7 @@ image::code/file_explorer_repo.png[width="50%"]
 
 Before we dive into the code, let's meet **Continue**.
 
-== Step 2: Add Continue, Your Coding Teammate
+== Step 2: Add Continue, Your coding teammate
 
 **Continue** is an open-source AI code assistant that integrates seamlessly into VS Code. Unlike traditional code completion tools, Continue provides an interactive chat interface where you can have natural conversations about your code. You can ask Continue to perform actions like:
 
@@ -71,7 +79,7 @@ Before we dive into the code, let's meet **Continue**.
 
 Continue will execute these requests directly in your editor, with full awareness of your codebase and project context.
 
-What makes Continue particularly powerful is its flexibility - it supports custom model endpoints, making it perfect for connecting to your private enterprise models. As an **open-source** solution, Continue gives you complete control over your AI coding workflow. 
+What makes Continue particularly powerful is its flexibility - it supports custom model endpoints, making it perfect for connecting to your private enterprise models. As an **open-source** solution, Continue gives you complete control over your AI coding workflow.
 
 === Install Continue
 
@@ -83,7 +91,7 @@ In the search bar, search for **Continue**.
 
 image::code/continue.png[width="50%"]
 
-Click on the arrow next to **Install Pre-Release** and instead select **Install Release Version** on the Continue extension.
+Click **Install** on the Continue extension.
 
 image::code/install_release_version.png[width="50%"]
 
@@ -91,13 +99,13 @@ You will get a trust verification message. Select **Trust Publisher & Install**.
 
 image::code/trust_continue.png[width="50%"]
 
-Once installed, click on the arrow next to `Uninstall -> Install Specific Version` as seen below. We are going to select a specific version to install since things move so quickly around here!
+// Once installed, click on the arrow next to `Uninstall -> Install Specific Version` as seen below. We are going to select a specific version to install since things move so quickly around here!
 
-Click **Install Specific Version...**
+// Click **Install Specific Version...**
 
-image::code/install_specific_version.png[width="50%"]
+// image::code/install_specific_version.png[width="50%"]
 
-You will see a drop-down appear with different versions. Please select **v1.0.21**.
+// You will see a drop-down appear with different versions. Please select **v1.0.21**.
 
 Once installed, select "Reload Window" to restart the extension.
 
@@ -113,8 +121,8 @@ image::code/continue_sidebar.png[width="50%"]
 
 We will do two things in this module:
 
-**1.** Connect to our Granite model within our company's MaaS platform
-**2.** Use our model's "brain" to help us understand and deploy a fun game, and then work on an impactful Kubernetes deployment.
+. Connect to our Granite model within our company's MaaS platform
+. Use our model's "brain" to help us understand and deploy a fun game, and then work on an impactful Kubernetes deployment.
 
 In order to connect our model to the Continue code extension we must provide the extension our model's endpoint URL and API key from our MaaS application in the previous module.
 
@@ -150,7 +158,7 @@ context:
   - provider: codebase
 ----
 
-// IMPORTANT: Replace the `apiBase` URL with your actual MaaS endpoint URL and `YOUR_API_KEY` with the API key from your MaaS application. 
+// IMPORTANT: Replace the `apiBase` URL with your actual MaaS endpoint URL and `YOUR_API_KEY` with the API key from your MaaS application.
 
 // For example:
 
@@ -173,4 +181,4 @@ You've now:
 * Installed Continue and configured it to connect to your private Granite model
 * Set up an AI assistant that can refactor, edit and explain your code!
 
-Next, you will use Continue to help you develop a little fun game to get warmed up. 
+Next, you will use Continue to help you develop a little fun game to get warmed up.

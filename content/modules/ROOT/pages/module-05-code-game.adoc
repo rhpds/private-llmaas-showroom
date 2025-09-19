@@ -23,7 +23,7 @@ image:code/game_starters.png[width="50%"]
 
 Open the game file of your preference, in the language of your choice.
 
-The top half of the file includes working game code. The bottom half of the file includes instructions as comments to extend the game application. 
+The top half of the file includes working game code. The bottom half of the file includes instructions as comments to extend the game application.
 
 == Use Continue to Build and Enhance
 
@@ -53,7 +53,7 @@ Here is a short description of each of the Continue options so that you will und
 
 Follow the guidance in the file comments, or ask your own questions - this is your playground!
 
-IMPORTANT: Ensure any text that does not contribute to the game code stays as a comment. 
+IMPORTANT: Ensure any text that does not contribute to the game code stays as a comment.
 
 == Run (and Play) Your Game
 
