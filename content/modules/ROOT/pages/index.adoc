@@ -9,7 +9,7 @@ This isn't a simple tutorial, this is the beginning of an adventure into the com
 
 In this hands-on session, you will rotate between key personas critical to delivering modern, production-level AI services:
 
-* As a **platform engineer** you will design and deploy model serving environments and prepare the infrastructure that makes scalable model hosting possible.
+// * As a **platform engineer** you will design and deploy model serving environments and prepare the infrastructure that makes scalable model hosting possible.
 
 * As an **AI application developer**, you will connect real applications to private LLM endpoints, integrate code assistant technology to build and deploy fun, and real-world, applications.
 
@@ -21,29 +21,27 @@ At the end, you will walk away with practical experience across the lifecycle of
 
 == Workshop Agenda
 
-=== **Module 1:** Setting Up the AI Backbone
-Step into the role of platform engineer. You will see how to provision a scalable, secure Model-as-a-Service stack leveraging OpenShift AI - laying the necessary foundation for internal model hosting at scale.
+// === **Module 1:** Setting Up the AI Backbone
+// Step into the role of platform engineer. You will see how to provision a scalable, secure Model-as-a-Service stack leveraging OpenShift AI - laying the necessary foundation for internal model hosting at scale.
 
-=== **Module 2:** Activate the Code Assistant and Use AI to Enhance your Coding Skills
-Now, shift to the app developer's perspective. Connect to the model endpoint you deployed and then integrate it into a developer facing code assistant to help you develop for your work, bridging infrastructure and app logic.
+=== **Module 1:** Activate the Code Assistant and Use AI to Enhance your Coding Skills
+Step into the app developer's perspective. Connect to the model endpoint you deployed and then integrate it into a developer facing code assistant to help you develop for your work, bridging infrastructure and app logic.
 
-=== **Module 3:** Leverage the power of Agentic AI tooling
+=== **Module 2:** Leverage the power of Agentic AI tooling
 With the mindset of a site reliability engineer, you'll use model context protocol (mcp) and the LlamaStack API to interact more easily with your openshift cluster.
 
-=== **Module 4:** Analytics
+=== **Module 3:** Analytics
 Take on the role of a platform SRE or product owner responsible for understanding how your private LLM is being used, and whether it's operating effectively at scale by exploring model usage analytics. 
 
-=== **Module 5:** Reflect and Wrap-Up
+=== **Module 4:** Reflect and Wrap-Up
 Assess what you've built. We'll close with key takeaways, architectural guidance, and patterns you can bring back to your organization.
 
 == Workshop Environment
 
-For our workshop, we have provisioned an OpenShift Container Platform cluster for each participant, with Red Hat OpenShift AI deployed.
-
-Each person attending this lab has a full admin access (`cluster-admin`) to their cluster to be able to do some of the exercises requiring admin priveleges.
+For our workshop, we have provisioned an environment on an OpenShift Container Platform cluster for each participant, with Red Hat OpenShift AI deployed.
 
 == Embody the Role
-You’re not just here to observe—you’re here to build, test, and troubleshoot like the teams responsible for AI in production!
+You're not just here to observe—you're here to build, test, and troubleshoot like the teams responsible for AI in production!
 
 At each phase, step into the persona, ask yourself:
 
