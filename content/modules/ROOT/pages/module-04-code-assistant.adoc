@@ -35,11 +35,12 @@ You could also easily leverage our exposed model API endpoint in your local envi
 
 Your platform engineer has provided you a direct URL to the Dev Spaces console to begin your work.
 
-Navigate to your DevSpace[{devworkspace_route}].
+Navigate to your {devworkspace_route}[DevSpace^].
 
 We have a Red Hat DevSpaces workspace ready for your use, with the required dependencies. As a developer, you can also create your own workspace without needing to install or configure anything locally. There may however, be some restrictions put in place by your admin around resource limitations or only using approved devfiles (yaml files used to instantiate new workspaces).
 
-Log into your DevSpace using your Sandbox credentials:
+Log into your DevSpace using your OpenShift Sandbox credentials:
+
 * *Username*: `{sandbox_openshift_user}`
 * *Password*: `{sandbox_openshift_password}`
 
